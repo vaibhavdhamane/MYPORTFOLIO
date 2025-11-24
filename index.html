@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Dhamane | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Welcome!</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Vaibhav Dhamane.</span></h1>
+                <p class="subtitle">Computer Science Student | Java Developer | Web Enthusiast</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="https://drive.google.com/file/d/YOUR_LINK_HERE/view" target="_blank"
+                        class="btn secondary-btn">
+                        Download Resume
+                    </a>
+                </div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/vaibhavdhamane" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vaibhavdhamane" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <img src="Assets/Images/profile-pic.png" alt="Vaibhav Dhamane" class="hero-img">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-wrapper"
+            style="display: flex; justify-content: center; align-items: center; gap: 50px; margin-bottom: 50px; flex-wrap: wrap;">
+
+           
+
+            <div class="summary-box" style="max-width: 600px;">
+                <p>
+                    Computer Science student with a strong foundation in <span class="highlight">Java</span> and
+                    <span class="highlight">Data Structures & Algorithms</span>.
+                    Proficient in front-end development using HTML and CSS. Eager to apply problem-solving skills to
+                    build innovative software solutions,
+                    with a keen interest in the practical applications of <span class="highlight">Artificial
+                        Intelligence</span>.
+                </p>
+            </div>
+        </div>
+
+        <h1 class="timeline-title" style="text-align: center;">Education</h1>
+
+        <div class="education-grid">
+            <div class="edu-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>B.Tech (CSE)</h3>
+                <p class="institute">Tatyasaheb Kore Institute of Engineering and Technology, Warnanagar</p>
+                <p class="year">2022 - 2026</p>
+                <div class="marks">Current CGPA : <span>7.57</span></div>
+            </div>
+
+            <div class="edu-card">
+                <i class="fas fa-university"></i>
+                <h3>HSC (12th)</h3>
+                <p class="institute">Vivekanand College, Kolhapur</p>
+                <p class="year"><br>2022</p>
+                <div class="marks">Percentage: <span>72.12%</span></div>
+            </div>
+
+            <div class="edu-card">
+                <i class="fas fa-school"></i>
+                <h3>SSC (10th)</h3>
+                <p class="institute">Pimpalgaon Vidyalaya Pimpalgaon</p>
+                <p class="year"><br>2020</p>
+                <div class="marks">Percentage: <span>92.20%</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="Assets/Images/project1.png" alt="Gate Quest Project" class="project-img">
+                <div class="project-info">
+                    <h3>Gate Quest</h3>
+                    <p>A web-based GATE preparation platform with subject-wise test modules, instant score analysis, and
+                        detailed solutions.</p>
+                        <br>
+                    <div class="tags">
+                        <span>MongoDB</span><span>Express</span><span>React</span><span>Node</span>
+                    </div>
+                    <a href="https://gate-quest-beta.vercel.app/" target="_blank" class="btn small-btn">View Project <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="Assets/Images/project2.png" alt="Laptop Recommendation" class="project-img">
+                <div class="project-info">
+                    <h3>Laptop Recommendation System</h3>
+                    <p>A console-based application that recommends laptops based on user preferences (price, brand,
+                        processor, RAM).</p>
+                        <br>
+                    <div class="tags">
+                        <span>Java</span><span>OOPs</span>
+                    </div>
+                    <a href="#" target="_blank" class="btn small-btn">View Code <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding alt-bg">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>vaibhavdhamane00@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(+91) 8767928096</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Maharashtra, India</p>
+                </div>
+            </div>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2025 Vaibhav Dhamane. All Rights Reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
