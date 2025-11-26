@@ -12,7 +12,6 @@ if (currentTheme === 'dark') {
 }
 
 themeToggle.addEventListener('click', () => {
-    // Toggle the theme attribute
     if (body.getAttribute('data-theme') === 'dark') {
         body.removeAttribute('data-theme');
         icon.classList.remove('fa-sun');
@@ -27,9 +26,8 @@ themeToggle.addEventListener('click', () => {
 });
 
 // 2. EMAILJS INTEGRATION
-// Initialize EmailJS with your PUBLIC KEY
 (function() {
-    // REPLACE 'YOUR_PUBLIC_KEY' WITH YOUR ACTUAL KEY FROM EMAILJS DASHBOARD
+    // YOUR PUBLIC KEY
     emailjs.init("E_48mXM4VNF5b2dzS"); 
 })();
 
@@ -40,7 +38,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const originalText = btn.innerText;
     btn.innerText = 'Sending...';
 
-    // REPLACE 'YOUR_SERVICE_ID' AND 'YOUR_TEMPLATE_ID'
+    // YOUR SERVICE & TEMPLATE IDs
     const serviceID = 'service_cdlgf2v'; 
     const templateID = 'template_e2p5657';
 
