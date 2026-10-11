@@ -1,287 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Dhamane | Portfolio</title>
-
+    <meta name="theme-color" content="#121212">
+    <meta name="description" content="Vaibhav Dhamane is a software developer and computer science student building full-stack web apps and AI projects.">
+    <title>Vaibhav Dhamane | Software Developer</title>
     <link rel="icon" type="image/png" href="Assets/Images/iconphoto.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-    <header>
-        <nav class="navbar">
-            <div class="logo">Portfolio </div>
+<body data-theme="dark">
+    <header class="site-header">
+        <nav class="navbar shell" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Vaibhav Dhamane home">VD</a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="fas fa-bars"></i></button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+                <li class="more-menu"><a href="#github-activity">More <i class="fas fa-chevron-down"></i></a><div class="more-dropdown"><a href="#skills">Tech stack</a><a href="#github-activity">GitHub activity</a><a href="#education">Education</a><a href="#contact">Contact</a></div></li>
+                <li class="nav-theme"><button id="theme-toggle" type="button" aria-label="Switch to light theme"><i class="far fa-sun"></i></button></li>
             </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-container">
-
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Vaibhav Dhamane.</span></h1>
-                <p class="subtitle">Computer Science Student | Software Engineer | Web Enthusiast</p>
-
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary-btn">View My Work</a>
-                    <a href="https://drive.google.com/file/d/1mTCiSoFDRiNJVECKyHelkXBoaTgCnily/view?usp=sharing"
-                        target="_blank" class="btn secondary-btn">
-                        Download Resume
-                    </a>
+    <main>
+        <section id="home" class="hero shell">
+            <div class="hero-copy">
+                <h1>Vaibhav Dhamane</h1>
+                <p class="hero-role">Software Developer · Computer Science Student</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary"><i class="far fa-folder-open"></i> View projects</a>
+                    <a href="mailto:vaibhavdhamane00@gmail.com" class="button button-quiet"><i class="far fa-envelope"></i> Email me</a>
                 </div>
-
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/vaibhavdhamane" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/vaibhavdhamane" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://leetcode.com/u/vaibhavdhamane/" target="_blank">
-                        <i class="fas fa-code"></i>
-                    </a>
+                <p class="hero-intro">I build full-stack web apps and explore practical applications of AI. I enjoy solving real problems and turning ideas into useful products.</p>
+                <div class="social-links" aria-label="Social links">
+                    <a href="https://www.linkedin.com/in/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/vaibhavdhamane/" target="_blank" rel="noreferrer" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                    <a href="mailto:vaibhavdhamane00@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+                    <a href="https://drive.google.com/file/d/1mTCiSoFDRiNJVECKyHelkXBoaTgCnily/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Résumé"><i class="far fa-file-lines"></i></a>
                 </div>
             </div>
+            <div class="hero-portrait"><img src="Assets/Images/myimage.png" alt="Vaibhav Dhamane"></div>
+        </section>
 
-            <div class="hero-image-container">
-                <img src="Assets/Images/profile-pic.png" alt="Vaibhav Dhamane" class="hero-img">
+        <section id="skills" class="tech-section shell">
+            <h2 class="eyebrow">TECH STACK</h2>
+            <div class="tech-icons" aria-label="Technologies">
+                <span class="tech-java" title="Java">Java</span><span title="JavaScript"><i class="fab fa-js"></i></span><span title="HTML5"><i class="fab fa-html5"></i></span><span title="CSS3"><i class="fab fa-css3-alt"></i></span><span title="React"><i class="fab fa-react"></i></span><span title="Node.js"><i class="fab fa-node-js"></i></span><span title="Bootstrap"><i class="fab fa-bootstrap"></i></span><span title="Git"><i class="fab fa-git-alt"></i></span><span title="GitHub"><i class="fab fa-github"></i></span><span title="Databases"><i class="fas fa-database"></i></span><span title="Python"><i class="fab fa-python"></i></span>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <section id="about" class="section-padding">
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-wrapper">
-            <div class="summary-box">
-                <p>
-                    Computer Science Student & Software Engineer focused on
-                    <span class="highlight">Java, DSA</span>, and
-                    <span class="highlight">Web Development</span>.
-                    Passionate about solving complex problems and exploring the practical applications of
-                    <span class="highlight">Artificial Intelligence</span>.
-                </p>
+        <section id="github-activity" class="github-section shell">
+            <div class="github-card">
+                <div class="github-heading"><h2>GitHub contributions</h2><a href="https://github.com/vaibhavdhamane" target="_blank" rel="noreferrer" class="github-profile">@vaibhavdhamane <i class="fas fa-arrow-up-right-from-square"></i></a></div>
+                <div class="contribution-summary"><strong id="contribution-total">Loading contributions…</strong><span>in the last 12 months</span></div>
+                <div class="contribution-scroll"><div class="contribution-months" id="contribution-months" aria-hidden="true"></div><div class="contribution-chart-wrap"><div class="contribution-weekdays" aria-hidden="true"><span>Mon</span><span>Wed</span><span>Fri</span></div><div class="contribution-chart" id="contribution-chart" role="img" aria-label="GitHub contribution graph loading"></div></div></div>
+                <div class="contribution-footer"><span id="contribution-status">Fetching public contribution history…</span><span class="contribution-legend">Less <i class="level-0"></i><i class="level-1"></i><i class="level-2"></i><i class="level-3"></i><i class="level-4"></i> More</span></div>
             </div>
-        </div>
+        </section>
 
-        <h2 class="section-title timeline-title">Education</h2>
+        <section id="about" class="section shell">
+            <div class="section-heading"><h2>About</h2></div>
+            <p class="about-copy">I’m a Computer Science student focused on Java, data structures, and web development. I like learning by building and exploring how AI can solve practical problems.</p>
+        </section>
 
-        <div class="education-grid">
-            <div class="edu-card">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>B.Tech (CSE)</h3>
-                <p class="institute">Tatyasaheb Kore Institute of Engineering and Technology, Warnanagar</p>
-                <p class="year">2022-2026</p>
-                <div class="marks">CGPA : <span>7.75</span></div>
+        <section id="projects" class="section shell">
+            <div class="section-heading"><h2>Selected projects</h2></div>
+            <div class="projects-grid">
+                <article class="project-card"><span class="project-type">FULL-STACK WEB APP</span><h3>StayFinder</h3><p>A rental platform to discover, list, and book stays, with listing management and a smooth booking flow.</p><div class="tag-list"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div><div class="project-actions"><a href="https://stayfinder-ysx3.onrender.com/listings" target="_blank" rel="noreferrer">Live demo <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://github.com/vaibhavdhamane/StayFinder" target="_blank" rel="noreferrer">Source code <i class="fab fa-github"></i></a></div></article>
+                <article class="project-card"><span class="project-type">FINAL-YEAR AI PROJECT</span><h3>Traffic Sign Detection</h3><p>A computer vision project combining a CNN with an RL-GAN pipeline to recognize traffic signs in varied conditions.</p><div class="tag-list"><span>Python</span><span>CNN</span><span>GAN</span><span>Reinforcement learning</span></div><div class="project-actions"><span class="project-status">In development</span></div></article>
+                <article class="project-card"><span class="project-type">LEARNING PLATFORM</span><h3>Gate Quest</h3><p>A GATE preparation platform with subject-wise tests, instant score analysis, and detailed solutions.</p><div class="tag-list"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div><div class="project-actions"><a href="https://gate-quest-beta.vercel.app/" target="_blank" rel="noreferrer">Live demo <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://github.com/vaibhavdhamane/GATE-Quest-" target="_blank" rel="noreferrer">Source code <i class="fab fa-github"></i></a></div></article>
             </div>
+        </section>
 
-            <div class="edu-card">
-                <i class="fas fa-university"></i>
-                <h3>HSC (12th)</h3>
-                <p class="institute">Vivekanand College, Kolhapur</p>
-                <p class="year">2022</p>
-                <div class="marks">Percentage: <span>72.12%</span></div>
+        <section id="education" class="section shell">
+            <div class="section-heading"><h2>Education</h2></div>
+            <div class="education-list">
+                <article class="education-item"><div><h3>B.Tech, Computer Science & Engineering</h3><p>Tatyasaheb Kore Institute of Engineering and Technology, Warnanagar · 2022–2026</p></div><span>CGPA 7.75</span></article>
+                <article class="education-item"><div><h3>Higher Secondary Certificate</h3><p>Vivekanand College, Kolhapur · 2022</p></div><span>72.12%</span></article>
+                <article class="education-item"><div><h3>Secondary School Certificate</h3><p>Pimpalgaon Vidyalaya, Pimpalgaon · 2020</p></div><span>92.20%</span></article>
             </div>
+        </section>
 
-            <div class="edu-card">
-                <i class="fas fa-school"></i>
-                <h3>SSC (10th)</h3>
-                <p class="institute">Pimpalgaon Vidyalaya Pimpalgaon</p>
-                <p class="year">2020</p>
-                <div class="marks">Percentage: <span>92.20%</span></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section-padding alt-bg">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fab fa-java"></i>
-                <h3>Java</h3>
-                <p>Core & Advanced</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Logic & Web Scripting</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>SQL</h3>
-                <p>Query Language</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5 & CSS3</h3>
-                <p>Web Structure</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-bootstrap"></i>
-                <h3>Bootstrap</h3>
-                <p>Responsive Design</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-node-js"></i>
-                <h3>Node.js</h3>
-                <p>Runtime Environment</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-server"></i>
-                <h3>Express.js</h3>
-                <p>Backend Framework</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-leaf"></i>
-                <h3>MongoDB</h3>
-                <p>NoSQL Database</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>MySQL</h3>
-                <p>Relational Database</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-git-alt"></i>
-                <h3>Git & GitHub</h3>
-                <p>Version Control</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>VS Code</h3>
-                <p>Development Environment</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section-padding">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <div class="project-img-placeholder">
-                    <i class="fas fa-house-chimney"></i>
-                </div>
-                <div class="project-info">
-                    <h3>StayFinder</h3>
-                    <p>A full-stack property rental platform where users can browse, list, and book stays, with
-                        listing management and a smooth booking flow.</p>
-                    <div class="tags">
-                        <span>MongoDB</span><span>Express</span><span>React</span><span>Node</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://stayfinder-ysx3.onrender.com/listings" target="_blank"
-                            class="btn small-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                        <a href="https://github.com/vaibhavdhamane/StayFinder" target="_blank"
-                            class="btn small-btn">View Code <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img-placeholder">
-                    <i class="fas fa-traffic-light"></i>
-                </div>
-                <div class="project-info">
-                    <h3>Traffic Sign Detection & Recognition</h3>
-                    <p>Final-year AI project using a CNN combined with an RL-GAN pipeline to classify and recognize
-                        traffic signs, improving robustness under varied real-world conditions.</p>
-                    <div class="tags">
-                        <span>Python</span><span>CNN</span><span>GAN</span><span>Reinforcement Learning</span>
-                    </div>
-                    <div class="project-links">
-                        <span class="btn small-btn disabled-btn">Final Year Project <i
-                                class="fas fa-flask"></i></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="Assets/Images/project1.png" alt="Gate Quest Project" class="project-img">
-                <div class="project-info">
-                    <h3>Gate Quest</h3>
-                    <p>A web-based GATE preparation platform with subject-wise test modules, instant score analysis, and
-                        detailed solutions.</p>
-                    <div class="tags">
-                        <span>MongoDB</span><span>Express</span><span>React</span><span>Node</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://gate-quest-beta.vercel.app/" target="_blank" class="btn small-btn">Live Demo <i
-                                class="fas fa-external-link-alt"></i></a>
-                        <a href="https://github.com/vaibhavdhamane/GATE-Quest-" target="_blank"
-                            class="btn small-btn">View Code <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact" class="section-padding alt-bg">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-item"><i class="fas fa-envelope"></i>
-                    <p>vaibhavdhamane00@gmail.com</p>
-                </div>
-                <div class="info-item"><i class="fas fa-phone"></i>
-                    <p>(+91) 8767928096</p>
-                </div>
-                <div class="info-item"><i class="fas fa-map-marker-alt"></i>
-                    <p>Maharashtra, India</p>
-                </div>
-            </div>
-
-            <form id="contact-form">
-                <div class="form-group"><input type="text" id="name" name="name" placeholder="Your Name" required></div>
-                <div class="form-group"><input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group"><textarea id="message" name="message" rows="5" placeholder="Your Message"
-                        required></textarea></div>
-                <button type="submit" class="btn primary-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>Copyright © 2025 Vaibhav Dhamane. All Rights Reserved.</p>
-    </footer>
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <section id="contact" class="contact-section">
+            <div class="contact-inner shell"><h2>Get in touch</h2><a class="contact-email" href="mailto:vaibhavdhamane00@gmail.com">vaibhavdhamane00@gmail.com <i class="fas fa-arrow-up-right-from-square"></i></a><p>Maharashtra, India · <a href="tel:+918767928096">+91 87679 28096</a></p></div>
+        </section>
+    </main>
+    <footer class="footer shell"><a class="brand" href="#home">VD</a><span>Vaibhav Dhamane · © 2026</span><div class="footer-socials"><a href="https://github.com/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></footer>
     <script src="script.js"></script>
 </body>
-
 </html>
