@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#121212">
-    <meta name="description" content="Vaibhav Dhamane is a software developer and computer science student building full-stack web apps and AI projects.">
+    <meta name="description" content="Vaibhav Dhamane is a software developer building full-stack web apps and AI developer tools like CodeAudit, a grounded AI pull request reviewer.">
+    <meta property="og:title" content="Vaibhav Dhamane | Software Developer">
+    <meta property="og:description" content="Full-stack web apps and AI developer tools. Creator of CodeAudit.">
+    <meta property="og:image" content="Assets/Images/codeaudit.png">
     <title>Vaibhav Dhamane | Software Developer</title>
-    <link rel="icon" type="image/png" href="Assets\Images\myimage.png">
+    <link rel="icon" type="image/png" href="Assets/Images/myimage.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -37,7 +40,7 @@
                     <a href="#projects" class="button button-primary"><i class="far fa-folder-open"></i> View projects</a>
                     <a href="mailto:vaibhavdhamane00@gmail.com" class="button button-quiet"><i class="far fa-envelope"></i> Email me</a>
                 </div>
-                <p class="hero-intro">I build full-stack web apps and explore practical applications of AI. I enjoy solving real problems and turning ideas into useful products.</p>
+                <p class="hero-intro">I build full-stack web apps and AI tools that developers can actually trust. My latest project, <a href="https://codeaudit-sxpt.onrender.com/" target="_blank" rel="noreferrer" class="inline-link">CodeAudit</a>, reviews GitHub pull requests and keeps only the AI findings it can prove from the code.</p>
                 <div class="social-links" aria-label="Social links">
                     <a href="https://www.linkedin.com/in/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -57,7 +60,7 @@
         </section>
 
         <section id="github-activity" class="github-section shell">
-            <div class="github-card">
+            <div class="github-card reveal">
                 <div class="github-heading"><h2>GitHub contributions</h2><a href="https://github.com/vaibhavdhamane" target="_blank" rel="noreferrer" class="github-profile">@vaibhavdhamane <i class="fas fa-arrow-up-right-from-square"></i></a></div>
                 <div class="contribution-summary"><strong id="contribution-total">Loading contributions…</strong><span>in the last 12 months</span></div>
                 <div class="contribution-scroll"><div class="contribution-months" id="contribution-months" aria-hidden="true"></div><div class="contribution-chart-wrap"><div class="contribution-weekdays" aria-hidden="true"><span>Mon</span><span>Wed</span><span>Fri</span></div><div class="contribution-chart" id="contribution-chart" role="img" aria-label="GitHub contribution graph loading"></div></div></div>
@@ -65,21 +68,39 @@
             </div>
         </section>
 
-        <section id="about" class="section shell">
+        <section id="about" class="section shell reveal">
             <div class="section-heading"><h2>About</h2></div>
-            <p class="about-copy">I’m a Computer Science student focused on Java, data structures, and web development. I like learning by building and exploring how AI can solve practical problems.</p>
+            <p class="about-copy">I’m a Computer Science student focused on Java, data structures, and web development. I learn by building: from booking platforms and exam prep apps to developer tooling that combines static analysis with AI. I care about software that is honest about what it knows, and fast enough to be useful.</p>
         </section>
 
         <section id="projects" class="section shell">
             <div class="section-heading"><h2>Selected projects</h2></div>
+            <article class="featured-project reveal">
+                <a class="featured-media" href="https://codeaudit-sxpt.onrender.com/" target="_blank" rel="noreferrer" aria-label="Open CodeAudit live site">
+                    <img src="Assets/Images/codeaudit.png" alt="CodeAudit landing page: Review pull requests without the AI guesswork" loading="lazy">
+                </a>
+                <div class="featured-body">
+                    <div class="featured-meta"><span class="project-type">AI DEVELOPER TOOL · FEATURED</span><span class="live-badge"><i></i> Live beta</span></div>
+                    <h3>CodeAudit</h3>
+                    <p class="featured-lead">An AI pull request reviewer that doesn’t make things up. CodeAudit runs real analysis tools, asks an AI for findings, then keeps only the ones it can prove from your code.</p>
+                    <ol class="pipeline">
+                        <li><strong>Reads the PR</strong><span>Checks out the pull request and indexes it with Tree-sitter to find changed functions and their callers.</span></li>
+                        <li><strong>Runs real tools first</strong><span>ESLint with pinned rules and a secret scanner that masks leaked keys.</span></li>
+                        <li><strong>AI review with context</strong><span>Gemini reviews the diff with cross-file context in view.</span></li>
+                        <li><strong>Grounding check</strong><span>A finding survives only if it names a real file, points at changed lines and quotes code that exists.</span></li>
+                    </ol>
+                    <div class="tag-list"><span>Node.js</span><span>Tree-sitter</span><span>ESLint</span><span>Gemini API</span><span>GitHub OAuth</span><span>JavaScript / TypeScript</span></div>
+                    <div class="project-actions"><a class="button button-primary" href="https://codeaudit-sxpt.onrender.com/" target="_blank" rel="noreferrer">Try it live <i class="fas fa-arrow-up-right-from-square"></i></a><a class="button button-quiet" href="https://codeaudit-sxpt.onrender.com/#how-it-works" target="_blank" rel="noreferrer">How it works</a></div>
+                </div>
+            </article>
             <div class="projects-grid">
-                <article class="project-card"><span class="project-type">FULL-STACK WEB APP</span><h3>StayFinder</h3><p>A rental platform to discover, list, and book stays, with listing management and a smooth booking flow.</p><div class="tag-list"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div><div class="project-actions"><a href="https://stayfinder-ysx3.onrender.com/listings" target="_blank" rel="noreferrer">Live demo <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://github.com/vaibhavdhamane/StayFinder" target="_blank" rel="noreferrer">Source code <i class="fab fa-github"></i></a></div></article>
-                <article class="project-card"><span class="project-type">FINAL-YEAR AI PROJECT</span><h3>Traffic Sign Detection</h3><p>A computer vision project combining a CNN with an RL-GAN pipeline to recognize traffic signs in varied conditions.</p><div class="tag-list"><span>Python</span><span>CNN</span><span>GAN</span><span>Reinforcement learning</span></div><div class="project-actions"><span class="project-status">In development</span></div></article>
-                <article class="project-card"><span class="project-type">LEARNING PLATFORM</span><h3>Gate Quest</h3><p>A GATE preparation platform with subject-wise tests, instant score analysis, and detailed solutions.</p><div class="tag-list"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div><div class="project-actions"><a href="https://gate-quest-beta.vercel.app/" target="_blank" rel="noreferrer">Live demo <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://github.com/vaibhavdhamane/GATE-Quest-" target="_blank" rel="noreferrer">Source code <i class="fab fa-github"></i></a></div></article>
+                <article class="project-card reveal"><span class="project-type">FULL-STACK WEB APP</span><h3>StayFinder</h3><p>A rental platform to discover, list, and book stays, with listing management and a smooth booking flow.</p><div class="tag-list"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div><div class="project-actions"><a href="https://stayfinder-ysx3.onrender.com/listings" target="_blank" rel="noreferrer">Live demo <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://github.com/vaibhavdhamane/StayFinder" target="_blank" rel="noreferrer">Source <i class="fab fa-github"></i></a></div></article>
+                <article class="project-card reveal"><span class="project-type">LEARNING PLATFORM</span><h3>Gate Quest</h3><p>A GATE preparation platform with subject-wise tests, instant score analysis, and detailed solutions.</p><div class="tag-list"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div><div class="project-actions"><a href="https://gate-quest-beta.vercel.app/" target="_blank" rel="noreferrer">Live demo <i class="fas fa-arrow-up-right-from-square"></i></a><a href="https://github.com/vaibhavdhamane/GATE-Quest-" target="_blank" rel="noreferrer">Source <i class="fab fa-github"></i></a></div></article>
+                <article class="project-card reveal"><span class="project-type">FINAL-YEAR AI PROJECT</span><h3>Traffic Sign Detection</h3><p>A computer vision project combining a CNN with an RL-GAN pipeline to recognize traffic signs in varied conditions.</p><div class="tag-list"><span>Python</span><span>CNN</span><span>GAN</span><span>RL</span></div><div class="project-actions"><span class="project-status"><i class="fas fa-circle-notch"></i> In development</span></div></article>
             </div>
         </section>
 
-        <section id="education" class="section shell">
+        <section id="education" class="section shell reveal">
             <div class="section-heading"><h2>Education</h2></div>
             <div class="education-list">
                 <article class="education-item"><div><h3>B.Tech, Computer Science & Engineering</h3><p>Tatyasaheb Kore Institute of Engineering and Technology, Warnanagar · 2022–2026</p></div><span>CGPA 7.75</span></article>
@@ -92,7 +113,7 @@
             <div class="contact-inner shell"><h2>Get in touch</h2><a class="contact-email" href="mailto:vaibhavdhamane00@gmail.com">vaibhavdhamane00@gmail.com <i class="fas fa-arrow-up-right-from-square"></i></a><p>Maharashtra, India · <a href="tel:+918767928096">+91 87679 28096</a></p></div>
         </section>
     </main>
-    <footer class="footer shell"><a class="brand" href="#home">VD</a><span>Vaibhav Dhamane · © 2026</span><div class="footer-socials"><a href="https://github.com/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></footer>
+    <footer class="footer shell"><a class="brand" href="#home">VD</a><span>Vaibhav Dhamane · © <span id="year">2026</span></span><div class="footer-socials"><a href="https://github.com/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/vaibhavdhamane" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></footer>
     <script src="script.js"></script>
 </body>
 </html>

@@ -110,3 +110,35 @@ fetch(`https://github-contributions-api.jogruber.de/v4/${githubUsername}?y=last`
         contributionChart.setAttribute('aria-label', 'Contribution graph unavailable');
         contributionStatus.innerHTML = `<a href="https://github.com/${githubUsername}" target="_blank" rel="noreferrer">See your activity on GitHub</a>`;
     });
+
+// Footer year
+const yearEl = document.querySelector('#year');
+if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach((el) => revealObserver.observe(el));
+} else {
+    revealEls.forEach((el) => el.classList.add('is-visible'));
+}
+
+// Highlight the nav link for the section in view
+const navAnchors = [...document.querySelectorAll('.nav-links > li > a[href^="#"]')];
+const trackedSections = ['home', 'about', 'projects'].map((id) => document.getElementById(id)).filter(Boolean);
+if ('IntersectionObserver' in window) {
+    const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            navAnchors.forEach((a) => a.classList.toggle('is-active', a.getAttribute('href') === `#${entry.target.id}`));
+        });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    trackedSections.forEach((section) => navObserver.observe(section));
+}
