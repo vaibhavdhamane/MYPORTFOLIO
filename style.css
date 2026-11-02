@@ -49,7 +49,7 @@ h1, h2, h3, p { margin-top: 0; }
 .button-quiet:hover { background: #f3f3f1; }
 .hero-intro { max-width: 680px; margin: 25px 0 17px; color: var(--muted); font-size: 17px; line-height: 1.75; }
 .social-links { display: flex; align-items: center; gap: 17px; }
-.social-links a { color: var(--muted); font-size: 19px; }
+.social-links a { color: var(--muted); font-size: 21px; }
 .social-links a:hover { color: var(--ink); }
 .hero-portrait { grid-column: 2; grid-row: 1; width: 195px; height: 195px; justify-self: end; overflow: hidden; border: 4px solid rgba(255,255,255,.9); border-radius: 50%; background: #e7e8e9; box-shadow: 0 0 0 1px #d9dadd, 0 8px 24px rgba(20,30,45,.12); }
 .hero-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 24%; }
@@ -204,7 +204,7 @@ body[data-theme="dark"] .live-badge { color: #5fd38a; }
     .hero-intro { margin-block: 17px 13px; font-size: 14px; }
     .button { min-height: 37px; padding-inline: 12px; font-size: 11px; }
     .social-links { gap: 13px; }
-    .social-links a { font-size: 16px; }
+    .social-links a { font-size: 17.5px; }
     .tech-icons { gap: 8px; }
     .tech-icons span { width: 49px; height: 49px; border-radius: 12px; font-size: 22px; }
     .github-card { padding: 14px 12px 11px; }
